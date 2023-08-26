@@ -1,0 +1,120 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Head section start */
+head {
+  display: inline;
+}
+.jumbotron {
+  background-color: #00c8eb;
+  padding: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+.jumbotron h1 {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  margin-bottom: 35px;
+}
+.jumbotron h3 {
+  color: #fff;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.navbar {
+  background-color: rgb(1, 177, 193);
+  padding: 1.4rem 3%;
+  border-bottom: 1px solid #2dd7d7;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.navbar-nav a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.navbar-nav a::after {
+  content: " ";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid #fff;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+/* Head section end */
+
+/* Main section start */
+main {
+  padding: 20px;
+  overflow: auto;
+}
+.hero {
+  float: left;
+  width: 75%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 5px 5px;
+  padding: 5px 5px 5px 5px;
+}
+.hero article h2 {
+  color: #3bd9e4;
+}
+.hero article img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 300px;
+}
+
+/* Aside section start */
+aside {
+  float: right;
+  width: 25%;
+  text-align: center;
+  padding-left: 5px;
+}
+aside .card h2,
+h3 {
+  color: #3bd9e4;
+}
+aside .aside-detail p span {
+  font-weight: bold;
+}
+/* Aside section end */
+/* Main section end */
+
+/* Footer section start */
+footer {
+  background-color: rgb(1, 177, 193);
+  padding: 3rem 0 3rem 0;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+  font-weight: bold;
+}
+/* Footer section end */
+/* Media Query */
+@media screen and (max-width: 1000px) {
+  .hero,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
